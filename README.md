@@ -44,13 +44,12 @@ that can be set for this role.
       netplan_enabled: true
       # The default is /etc/netplan/config.yaml.
       netplan_config_file: /etc/netplan/my-awesome-netplan.yaml
-      # Ubuntu 18.04, for example, defaults to using networkd.
-      netplan_renderer: networkd
-      # Simple network configuration to add a single network
-      # interface.
-      netplan_configuration:
+      # Simple network configuration to add a single network interface.
+      # Heredoc for configuration.
+      netplan_configuration: |
         network:
           version: 2
+          netplan_renderer: networkd
           ethernets:
             enp28s0f7:
               addresses:
@@ -68,3 +67,9 @@ Larry Smith Jr.
 - [EverythingShouldBeVirtual](http://everythingshouldbevirtual.com)
 - [@mrlesmithjr](https://www.twitter.com/mrlesmithjr)
 - <mailto:mrlesmithjr@gmail.com>
+
+## Modifier Information
+
+Chang Hsu
+
+- <mailto:zx1986@gmail.com>
