@@ -10,7 +10,7 @@ netplan_enabled: true
 #network:
 #  version: 2
 #  ethernets:
-#  netplan_renderer: networkd
+#  renderer: networkd
 #    enp0s3:
 #      dhcp4: true
 #    enp0s8:
