@@ -42,6 +42,11 @@ that can be set for this role.
       become: yes
       # This role will do nothing unless netplan_enabled is true.
       netplan_enabled: true
+      
+      # This should point to an existing netplan configuration file 
+      # on your system which this role will overwrite, 
+      # or to a nonexistent file which netplan is aware of.
+      #
       # The default is /etc/netplan/config.yaml.
       netplan_config_file: /etc/netplan/my-awesome-netplan.yaml
       # Simple network configuration to add a single network interface.
